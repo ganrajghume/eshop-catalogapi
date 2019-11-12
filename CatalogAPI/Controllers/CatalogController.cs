@@ -77,7 +77,8 @@ namespace CatalogAPI.Controllers
         }
 
         // [Authorize(Roles = "admin")]
-        [HttpPost("product")]
+        //[HttpPost("product")]
+        [HttpPost("", Name = "AddProductWithImage")]
         public ActionResult<CatalogItem> AddProduct()
         {
             //var imageName = SaveImageToLocal(Request.Form.Files[0]);
